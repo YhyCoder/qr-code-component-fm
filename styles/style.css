@@ -1,0 +1,68 @@
+/* ===== Fonts ===== */
+
+@font-face {
+  font-family: outfit;
+  src: url("../assets/fonts/woff2/Outfit-Regular.woff2") format("woff2"),
+    url("../assets/fonts/woff/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: outfit;
+  src: url("../assets/fonts/woff2/Outfit-Bold.woff2") format("woff2"),
+    url("../assets/fonts/woff/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ===== CSS Variables ===== */
+
+:root {
+  /* Colors */
+  --slate-900: hsl(218, 44%, 22%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-300: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Semantic Colors */
+  --clr-bg-body: var(--slate-300);
+
+  /* Typography */
+  --font-md: 1.5rem;
+  --font-lg: 2.2rem;
+  --line-height-sm: 1.2;
+  --line-height-md: 1.4;
+  --letter-spacing: 0.2px;
+
+  /* Spacing */
+  --space-md: 1.6rem;
+  --space-lg: 2.4rem;
+  --space-xl: 4rem;
+}
+
+/* ===== CSS Reset ===== */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: outfit, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: var(--clr-bg-body);
+}
+
+/* ===== Layout ===== */
